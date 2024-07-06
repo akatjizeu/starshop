@@ -5,9 +5,9 @@
 <h1>Starshop: Your monopoly-busting option for Starship parts</h1>
 
 <div>
-    Browse through {{ numberOfStarships }} starships!
+    Browse through {{ ships|length * 10 }} starships!
 
-    {% if numberOfStarships > 400%}
+    {% if ships|length > 2%}
 
         <p>That's a shipload of starships</p>
 
