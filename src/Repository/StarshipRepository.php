@@ -17,7 +17,7 @@ class StarshipRepository
         return [
             new Starship(1, 'Uaueza', '4A','Ueii','Beautiful'),
             new Starship(2,'Casa','4B','CASA','Better'),
-            new Starship(3,'Dasa','4C','DASA','BNot At all')
+            new Starship(3,'Dasa','4C','DASA','Not At all')
         ];
     }
 
