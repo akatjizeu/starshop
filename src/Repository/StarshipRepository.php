@@ -16,9 +16,9 @@ class StarshipRepository
     {
         $this->logger->info("Starships collection retrieved");
         return [
-            new Starship(1, 'Uaueza', '4A','Ueii',StarshipStatusEnum::IN_PROGRESS),
-            new Starship(2,'Casa','4B','CASA',STarshipStatusEnum::COMPLETED),
-            new Starship(3,'Dasa','4C','DASA',StarshipStatusEnum::WAITING),
+            new Starship(1, 'USS LeafyCruiser (NCC-001)', 'Garden','Jean-Luc-Pickles',StarshipStatusEnum::IN_PROGRESS),
+            new Starship(2,'USS Espresso (NCC-1234-C)','Latte','James T. Quick',STarshipStatusEnum::COMPLETED),
+            new Starship(3,'USS Wanderlust (NCC-)','Delta Tourist','Kathryn Journeyway',StarshipStatusEnum::WAITING),
         ];
     }
 
