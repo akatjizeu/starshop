@@ -3,6 +3,7 @@
 namespace App\Repository;
 
 use App\Model\Starship;
+use App\Model\StarshipStatusEnum;
 use Psr\Log\LoggerInterface;
 
 class StarshipRepository
@@ -15,9 +16,9 @@ class StarshipRepository
     {
         $this->logger->info("Starships collection retrieved");
         return [
-            new Starship(1, 'Uaueza', '4A','Ueii','Beautiful'),
-            new Starship(2,'Casa','4B','CASA','Better'),
-            new Starship(3,'Dasa','4C','DASA','Not At all')
+            new Starship(1, 'Uaueza', '4A','Ueii',StarshipStatusEnum::IN_PROGRESS),
+            new Starship(2,'Casa','4B','CASA',STarshipStatusEnum::COMPLETED),
+            new Starship(3,'Dasa','4C','DASA',StarshipStatusEnum::WAITING),
         ];
     }
 
