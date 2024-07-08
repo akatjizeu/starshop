@@ -4,15 +4,17 @@ namespace App\Model;
 
 class Starship
 {
+
+
     public function __construct(
         private int $id,
         private string $name,
         private string $class,
         private string $captain,
         private StarshipStatusEnum $status,
+        private \DateTimeImmutable $arrivedAt,
     )
     {
-
     }
 
     public function getId(): int
@@ -55,5 +57,17 @@ class Starship
         };
 
     }
+
+    public function setArrivedAt(\DateTimeImmutable $arrivedAt): void
+    {
+        $this->arrivedAt = $arrivedAt;
+    }
+
+    public function getArrivedAt(): \DateTimeImmutable
+    {
+        return $this->arrivedAt;
+    }
+
+
 
 }
