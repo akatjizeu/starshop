@@ -32,6 +32,7 @@ class MainController extends AbstractController
         CacheInterface $cache,
     ): Response
     {
+
         $ships = $starshipRepository->findAll();
         $myShip = $ships[array_rand($ships)];
 

@@ -33,7 +33,7 @@ class StarshipRepository
                 new \DateTimeImmutable('-45 day')),
             new Starship(
                 3,
-                'USS Wanderlust (NCC-)',
+                'USS Wanderlust (NCC-2024-W)',
                 'Delta Tourist',
                 'Kathryn Journeyway',
                 StarshipStatusEnum::WAITING,
